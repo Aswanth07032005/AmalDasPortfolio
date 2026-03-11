@@ -1,0 +1,161 @@
+/* SECTION */
+
+.service-details{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#ffffff;
+  padding:calc(var(--nav-height) + 24px) 20px 54px;
+  font-family:sans-serif;
+ 
+}
+
+
+/* CARD */
+
+.service-details-container{
+  max-width:720px;
+  width:100%;
+  background:#ffffff;
+  padding:50px 40px;
+  border-radius:18px;
+  text-align:center;
+  border:1px solid #eee;
+  box-shadow:0 10px 35px rgba(0,0,0,0.08);
+
+  animation:fadeUp 0.8s ease forwards;
+  transition:all 0.35s ease;
+}
+
+
+/* HOVER EFFECT */
+
+.service-details-container:hover{
+  transform:translateY(-8px) scale(1.01);
+  box-shadow:0 20px 45px rgba(0,0,0,0.12);
+}
+
+
+/* ICON */
+
+.service-details-icon{
+  font-size:65px;
+  color:#111;
+  margin-bottom:25px;
+
+  animation:iconFloat 3s ease-in-out infinite;
+}
+
+
+/* TITLE */
+
+.service-details-title{
+  font-size:34px;
+  font-weight:700;
+  color:#111;
+  margin-bottom:15px;
+}
+
+
+/* DESCRIPTION */
+
+.service-details-description{
+  font-size:18px;
+  color:#555;
+  margin-bottom:22px;
+}
+
+
+/* DETAILS TEXT */
+
+.service-details-text{
+  font-size:16px;
+  line-height:1.7;
+  color:#666;
+}
+
+
+/* NOT FOUND */
+
+.service-not-found{
+  text-align:center;
+  margin-top:100px;
+  font-size:32px;
+  color:#111;
+}
+
+
+
+/* ======================
+   ANIMATIONS
+====================== */
+
+/* card entrance */
+
+@keyframes fadeUp{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+
+/* floating icon */
+
+@keyframes iconFloat{
+  0%{
+    transform:translateY(0px);
+  }
+  50%{
+    transform:translateY(-8px);
+  }
+  100%{
+    transform:translateY(0px);
+  }
+}
+
+
+
+/* ======================
+   MOBILE
+====================== */
+
+@media (max-width:768px){
+
+  .service-details-container{
+    padding:35px 25px;
+  }
+
+  .service-details-title{
+    font-size:26px;
+  }
+
+  .service-details-description{
+    font-size:16px;
+  }
+
+  .service-details-text{
+    font-size:15px;
+  }
+
+  .service-details-icon{
+    font-size:50px;
+  }
+
+}
+
+@media (max-width:576px){
+  .service-details{
+    padding:calc(var(--nav-height) + 16px) 14px 36px;
+  }
+
+  .service-details-container{
+    padding:26px 16px;
+    border-radius:14px;
+  }
+}

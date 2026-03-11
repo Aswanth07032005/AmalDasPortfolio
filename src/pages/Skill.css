@@ -1,0 +1,152 @@
+/* SKILLS SECTION */
+
+.skills{
+  padding:calc(var(--nav-height) + 24px) 0 70px;
+  background:#ffffff;
+  position:relative;
+  overflow:hidden;
+}
+
+/* CONTAINER */
+
+.skills-container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+  text-align:center;
+  position:relative;
+  z-index:2;
+}
+
+/* TITLE */
+
+.skills-title h2{
+  font-size:38px;
+  margin-bottom:10px;
+}
+
+.skills-title p{
+  color:#777;
+  margin-bottom:50px;
+}
+
+/* GRID */
+
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+/* CARD */
+
+.skill-card{
+  background-color:#ffffff !important ;
+  padding:40px 20px;
+  border-radius:12px;
+  transition:0.3s;
+  cursor:pointer;
+  height:100%;
+}
+
+.skill-card img{
+  width:50px;
+  margin-bottom:15px;
+}
+
+.skill-card h4{
+  margin:0;
+  font-size:18px;
+}
+
+.skill-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* FLOATING SHAPES */
+
+.shape{
+  position:absolute;
+  border:2px solid #ffb400;
+  opacity:0.3;
+  animation:float 6s infinite ease-in-out;
+}
+
+.circle1{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  top:60px;
+  left:120px;
+}
+
+.square1{
+  width:18px;
+  height:18px;
+  top:120px;
+  right:150px;
+}
+
+.triangle{
+  width:0;
+  height:0;
+  border-left:10px solid transparent;
+  border-right:10px solid transparent;
+  border-bottom:18px solid #ff5e57;
+  bottom:60px;
+  right:80px;
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes float{
+
+0%{ transform:translateY(0); }
+
+50%{ transform:translateY(-15px); }
+
+100%{ transform:translateY(0); }
+
+}
+
+/* TABLET */
+
+@media (max-width:992px){
+
+.skills-grid{
+  grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* MOBILE */
+
+@media (max-width:576px){
+
+.skills{
+  padding:calc(var(--nav-height) + 16px) 0 48px;
+}
+
+.skills-title h2{
+  font-size:28px;
+}
+
+.skills-grid{
+  grid-template-columns:1fr;
+  gap:18px;
+}
+
+.skills-title p{
+  margin-bottom:30px;
+}
+
+.skill-card{
+  padding:24px 14px;
+}
+
+.shape{
+  display:none;
+}
+
+}

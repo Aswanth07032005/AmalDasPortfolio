@@ -1,0 +1,113 @@
+.hire{
+  min-height: 100vh;
+  padding:calc(var(--nav-height) + 28px) 20px 56px;
+  background:#ffffff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.hire-container{
+  max-width:800px;
+  text-align:center;
+  padding:50px 30px;
+  border-radius:15px;
+  border:1px solid #e5e5e5;
+  background:white;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.hire-container h2{
+  font-size:36px;
+  color:#111;
+  margin-bottom:20px;
+}
+
+.hire-container h2 span{
+  color:#000;
+  font-weight:700;
+}
+
+.hire-container p{
+  color:#555;
+  font-size:16px;
+  line-height:1.7;
+  margin-bottom:35px;
+  overflow-wrap:anywhere;
+}
+
+.hire-buttons{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+/* Hire Button */
+
+.hire-btn{
+  padding:12px 28px;
+  background:black;
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.hire-btn:hover{
+  background:#333;
+}
+
+/* WhatsApp */
+
+.whatsapp-btn{
+  padding:12px 28px;
+  background:#25D366;
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.whatsapp-btn:hover{
+  background:#1ebe5d;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+  .hire-container{
+    padding:40px 20px;
+  }
+
+  .hire-container h2{
+    font-size:28px;
+  }
+
+  .hire-container p{
+    font-size:15px;
+  }
+
+}
+
+@media (max-width:576px){
+  .hire{
+    padding:calc(var(--nav-height) + 20px) 14px 44px;
+  }
+
+  .hire-buttons{
+    gap:12px;
+  }
+
+  .hire-btn,
+  .whatsapp-btn{
+    width:100%;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+}
