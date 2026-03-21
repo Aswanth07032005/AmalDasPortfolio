@@ -1,15 +1,11 @@
 import React from "react";
 import "./Works.css";
-import { Row, Col, Image } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function Works({works}) {
-
-
-
+function Works({ works }) {
   return (
     <section className="works-section" id="works">
-
       <div className="container">
 
         <div className="works-title">
@@ -18,14 +14,18 @@ function Works({works}) {
         </div>
 
         <Row>
-          {works.map((item)=>(
+          {works.map((item) => (
             <Col lg={4} md={6} xs={6} key={item.id}>
-
               <div className="work-card">
 
-               <Link to={`/work-details/${item.id}`}>
-                <Image src={item.image} alt={item.title}/>
-               </Link>
+                <Link to={`/work-details/${item.id}`}>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    loading="lazy"
+                    className="work-image"
+                  />
+                </Link>
 
                 <div className="work-overlay">
                   <h4>{item.title}</h4>
@@ -33,13 +33,11 @@ function Works({works}) {
                 </div>
 
               </div>
-
             </Col>
           ))}
         </Row>
 
       </div>
-
     </section>
   );
 }

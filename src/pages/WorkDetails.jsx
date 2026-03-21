@@ -25,9 +25,6 @@ function WorkDetails({ works }) {
           <h2>{findItem.title}</h2>
           <p>{findItem?.category?? <span className="text-danger fs-5">This page is currently under maintenance. Comming soon...</span>} 
         </p>
-        <Link to="/" className="back-home">
-                Go Back
-              </Link>
         </div>
 
         <Row className="work-grid">
@@ -43,13 +40,13 @@ function WorkDetails({ works }) {
 
                 <div className="video-wrapper">
 
-                  <iframe
-                    src={video.url}   /* use DRIVE PREVIEW LINK */
-                    title={`video-${index}`}
-                    className="video-frame"
-                    allow="autoplay"
-                    allowFullScreen
-                  ></iframe>
+             <iframe
+  src={`${video.url}?controls=0&modestbranding=1&rel=0&iv_load_policy=3&fs=0`}
+  title={`video-${index}`}
+  className="video-frame"
+  allow="autoplay"
+  allowFullScreen
+></iframe>
 
                   <div className="video-overlay"></div>
 

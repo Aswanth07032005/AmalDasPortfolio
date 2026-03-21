@@ -41,7 +41,7 @@ function Home() {
 
         {/* RIGHT IMAGE */}
         <div className="hero-image">
-          <Image src="/IMG_4124.jpg" alt="profile" fluid />
+          <Image src="/AmalDasPortfolio/IMG_4124.jpg" alt="profile" fluid />
         </div>
       </div>
     </section>

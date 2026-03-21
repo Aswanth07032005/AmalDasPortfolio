@@ -324,30 +324,13 @@ videoPreview:"/videos/time.mp4"
 
 //works
 const works = [
+
+
 {
 id:1,
-title:"Premium Delivery Films",
-category:"Reveal Cinematics",
-image:"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-videos:[
-    {
-    url: "https://drive.google.com/file/d/1xVTM9jjLqDrer9C472S-EEbGt-yQ4Mid/preview"
-  },
-
-  {
-    url: "https://drive.google.com/file/d/1C5M9yY_3hdG13Eq9lS8BTfMAb28d3rj3/preview"
-  },
-  
-  
-  
-]
-},
-
-{
-id:2,
 title:"Wedding Highlights",
 category:"Wedding Film",
-image:"https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80",
+image:"https://images.unsplash.com/photo-1615966650071-855b15f29ad1?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y291cGxlJTIwbG92ZXxlbnwwfHwwfHx8MA%3D%3D",
 videos:[
 {
     url: "https://drive.google.com/file/d/144j2lEhunT7ie_GSUPlNAZDE-pYPattf/preview"
@@ -367,12 +350,11 @@ videos:[
 
 ]
 },
-
 {
-id:3,
+id:2,
 title:"Instagram Edit",
 category:"Social Media Reel",
-image:"https://images.unsplash.com/photo-1516035069371-29a1b244cc32",
+image:"https://mojogear.eu/cdn/shop/articles/Header-1_0b56a907-eba5-4d0a-a826-1bb495288aa3.png?v=1757317785&width=1346",
 videos:[
 {
 url: "https://drive.google.com/file/d/1BySSYVJ44Vv65yIOjSTKfWuOSswYZBF7/preview"
@@ -417,21 +399,22 @@ url: "https://drive.google.com/file/d/1pvKj_k025ciLNIEfcIBsFHwLZTpyisAm/preview"
 ]
 },
 
+
 {
-id:4,
+id:3,
 title:"🚧 Under Maintenance",
 
-image:"https://images.unsplash.com/photo-1497032628192-86f99bcd76bc",
+image:"https://img.freepik.com/free-photo/cup-tea-lamp-laptop-desktop-night_169016-17447.jpg",
 videos:[
 
 ]
 },
 
 {
-id:5,
+id:4,
 title:"Events",
 category:"Live Event Edits",
-image:"https://images.unsplash.com/photo-1492724441997-5dc865305da7",
+image:"https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg",
 videos:[
  {
     url: "https://drive.google.com/file/d/1rf1QAYxdjtv42GzKPgR63hU-YmqeLE63/preview"
@@ -449,10 +432,10 @@ videos:[
 },
 
 {
-id:6,
+id:5,
 title:"Commercial Ad",
 category:"Brand Promotion",
-image:"https://images.unsplash.com/photo-1518779578993-ec3579fee39f",
+image:"https://apiexcellent.com/storage/images/blog/whatsapp-image-2024-09-13-at-44156-pm-20240913184346.jpeg",
 videos:[
      {
     url: "https://drive.google.com/file/d/10dXrooPPn9r7BHB4LqeD5UZjLgdQQLq8/preview"
@@ -473,7 +456,25 @@ videos:[
     url: "https://drive.google.com/file/d/1SGZ0EcFpW15N1Ti1OREYbspqiuxXKHj1/preview"
   }
 ]
-}
+},
+{
+id:6,
+title:"Premium Delivery Films",
+category:"Reveal Cinematics",
+image:"https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d7/54/92/d75492a0-57fb-5fd3-ea7d-138bf71c1734/AppIcon-0-0-1x_U007epad-0-1-85-220.png/1200x630wa.jpg",
+videos:[
+    {
+    url: "https://drive.google.com/file/d/1xVTM9jjLqDrer9C472S-EEbGt-yQ4Mid/preview"
+  },
+
+  {
+    url: "https://drive.google.com/file/d/1C5M9yY_3hdG13Eq9lS8BTfMAb28d3rj3/preview"
+  },
+  
+  
+  
+]
+},
 
 ];
 
